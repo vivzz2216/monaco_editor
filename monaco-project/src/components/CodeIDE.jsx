@@ -17,7 +17,7 @@ export default function CodeIDE() {
       try {
         setTerminalOutput("Loading Python interpreter...\n");
         const py = await loadPyodide({
-          indexURL: "https://cdn.jsdelivr.net/pyodide/v0.23.4/full/",
+          indexURL: "https://cdn.jsdelivr.net/pyodide/v0.28.3/full/",
         });
         setPyodide(py);
         setPyodideLoading(false);
