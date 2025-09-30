@@ -4,14 +4,21 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "concurrently \"npm run server\" \"vite\"",
+    "server": "node server/server.js",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
     "@monaco-editor/react": "^4.7.0",
+    "axios": "^1.12.2",
+    "child_process": "^1.0.2",
+    "concurrently": "^9.2.1",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
     "monaco-editor": "^0.53.0",
+    "multer": "^2.0.2",
     "prettier": "^3.6.2",
     "pyodide": "^0.28.3",
     "react": "^19.1.1",
